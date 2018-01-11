@@ -14,6 +14,8 @@
 		1F2B52D91FD54F42000492AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B52D71FD54F42000492AE /* LaunchScreen.storyboard */; };
 		1F2B52E41FD54F42000492AE /* elDiscountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B52E31FD54F42000492AE /* elDiscountTests.swift */; };
 		1F2B52EF1FD54F42000492AE /* elDiscountUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B52EE1FD54F42000492AE /* elDiscountUITests.swift */; };
+		1F2B53011FD55A43000492AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B53001FD55A43000492AE /* Constants.swift */; };
+		1FEB2F9E20076D930031052A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB2F9D20076D930031052A /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		1F2B52EA1FD54F42000492AE /* elDiscountUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = elDiscountUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2B52EE1FD54F42000492AE /* elDiscountUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elDiscountUITests.swift; sourceTree = "<group>"; };
 		1F2B52F01FD54F42000492AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F2B53001FD55A43000492AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1FEB2F9D20076D930031052A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				1F2B52D51FD54F42000492AE /* Assets.xcassets */,
 				1F2B52D71FD54F42000492AE /* LaunchScreen.storyboard */,
 				1F2B52DA1FD54F42000492AE /* Info.plist */,
+				1F2B53001FD55A43000492AE /* Constants.swift */,
+				1FEB2F9D20076D930031052A /* Extensions.swift */,
 			);
 			path = elDiscount;
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 			files = (
 				1F2B52D11FD54F42000492AE /* ViewController.swift in Sources */,
 				1F2B52CF1FD54F42000492AE /* AppDelegate.swift in Sources */,
+				1F2B53011FD55A43000492AE /* Constants.swift in Sources */,
+				1FEB2F9E20076D930031052A /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
