@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F05C6602008DCFA00D6443C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F05C65F2008DCFA00D6443C /* RoundedButton.swift */; };
 		1F2B52CF1FD54F42000492AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B52CE1FD54F42000492AE /* AppDelegate.swift */; };
 		1F2B52D11FD54F42000492AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B52D01FD54F42000492AE /* ViewController.swift */; };
 		1F2B52D41FD54F42000492AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B52D21FD54F42000492AE /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F05C65F2008DCFA00D6443C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		1F2B52CB1FD54F42000492AE /* elDiscount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elDiscount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2B52CE1FD54F42000492AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F2B52D01FD54F42000492AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				1F2B52DA1FD54F42000492AE /* Info.plist */,
 				1F2B53001FD55A43000492AE /* Constants.swift */,
 				1FEB2F9D20076D930031052A /* Extensions.swift */,
+				1F05C65F2008DCFA00D6443C /* RoundedButton.swift */,
 			);
 			path = elDiscount;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F2B52D11FD54F42000492AE /* ViewController.swift in Sources */,
+				1F05C6602008DCFA00D6443C /* RoundedButton.swift in Sources */,
 				1F2B52CF1FD54F42000492AE /* AppDelegate.swift in Sources */,
 				1F2B53011FD55A43000492AE /* Constants.swift in Sources */,
 				1FEB2F9E20076D930031052A /* Extensions.swift in Sources */,
