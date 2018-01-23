@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F05C6602008DCFA00D6443C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F05C65F2008DCFA00D6443C /* RoundedButton.swift */; };
+		1F09BB0A2016FC46008E9536 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09BB092016FC46008E9536 /* GlobalFunctions.swift */; };
 		1F2B52CF1FD54F42000492AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B52CE1FD54F42000492AE /* AppDelegate.swift */; };
 		1F2B52D11FD54F42000492AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B52D01FD54F42000492AE /* ViewController.swift */; };
 		1F2B52D41FD54F42000492AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B52D21FD54F42000492AE /* Main.storyboard */; };
@@ -16,7 +17,12 @@
 		1F2B52E41FD54F42000492AE /* elDiscountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B52E31FD54F42000492AE /* elDiscountTests.swift */; };
 		1F2B52EF1FD54F42000492AE /* elDiscountUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B52EE1FD54F42000492AE /* elDiscountUITests.swift */; };
 		1F2B53011FD55A43000492AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B53001FD55A43000492AE /* Constants.swift */; };
+		1FBD56E02015FBBE00DF4446 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FBD56DF2015FBBE00DF4446 /* Login.storyboard */; };
+		1FBD56E22015FBF700DF4446 /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBD56E12015FBF700DF4446 /* SegmentedViewController.swift */; };
+		1FBD56E42015FE3B00DF4446 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBD56E32015FE3B00DF4446 /* LoginViewController.swift */; };
+		1FBD56E62016226D00DF4446 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBD56E52016226D00DF4446 /* SignupViewController.swift */; };
 		1FEB2F9E20076D930031052A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB2F9D20076D930031052A /* Extensions.swift */; };
+		B1CA430AD2F3A8F7BB638FE8 /* Pods_elDiscount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B802318681CC83709075A364 /* Pods_elDiscount.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		1F05C65F2008DCFA00D6443C /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		1F09BB092016FC46008E9536 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 		1F2B52CB1FD54F42000492AE /* elDiscount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elDiscount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2B52CE1FD54F42000492AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F2B52D01FD54F42000492AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +59,14 @@
 		1F2B52EE1FD54F42000492AE /* elDiscountUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elDiscountUITests.swift; sourceTree = "<group>"; };
 		1F2B52F01FD54F42000492AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F2B53001FD55A43000492AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1FBD56DF2015FBBE00DF4446 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		1FBD56E12015FBF700DF4446 /* SegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
+		1FBD56E32015FE3B00DF4446 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1FBD56E52016226D00DF4446 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		1FEB2F9D20076D930031052A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		244FD01D654C7187242C5982 /* Pods-elDiscount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elDiscount.release.xcconfig"; path = "Pods/Target Support Files/Pods-elDiscount/Pods-elDiscount.release.xcconfig"; sourceTree = "<group>"; };
+		B802318681CC83709075A364 /* Pods_elDiscount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_elDiscount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE105865D6C3E9EA90D434AE /* Pods-elDiscount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elDiscount.debug.xcconfig"; path = "Pods/Target Support Files/Pods-elDiscount/Pods-elDiscount.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1CA430AD2F3A8F7BB638FE8 /* Pods_elDiscount.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +95,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1730A587F09963929DC9219E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B802318681CC83709075A364 /* Pods_elDiscount.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F09BB082016FBF8008E9536 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1F09BB092016FC46008E9536 /* GlobalFunctions.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		1F2B52C21FD54F42000492AE = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +118,8 @@
 				1F2B52E21FD54F42000492AE /* elDiscountTests */,
 				1F2B52ED1FD54F42000492AE /* elDiscountUITests */,
 				1F2B52CC1FD54F42000492AE /* Products */,
+				30C722C9FECFA282A06A7C3B /* Pods */,
+				1730A587F09963929DC9219E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +136,8 @@
 		1F2B52CD1FD54F42000492AE /* elDiscount */ = {
 			isa = PBXGroup;
 			children = (
+				1F09BB082016FBF8008E9536 /* SupportingFiles */,
+				1FBD56DE2015FB9E00DF4446 /* LoginSignup */,
 				1F2B52CE1FD54F42000492AE /* AppDelegate.swift */,
 				1F2B52D01FD54F42000492AE /* ViewController.swift */,
 				1F2B52D21FD54F42000492AE /* Main.storyboard */,
@@ -134,6 +169,26 @@
 			path = elDiscountUITests;
 			sourceTree = "<group>";
 		};
+		1FBD56DE2015FB9E00DF4446 /* LoginSignup */ = {
+			isa = PBXGroup;
+			children = (
+				1FBD56DF2015FBBE00DF4446 /* Login.storyboard */,
+				1FBD56E12015FBF700DF4446 /* SegmentedViewController.swift */,
+				1FBD56E32015FE3B00DF4446 /* LoginViewController.swift */,
+				1FBD56E52016226D00DF4446 /* SignupViewController.swift */,
+			);
+			path = LoginSignup;
+			sourceTree = "<group>";
+		};
+		30C722C9FECFA282A06A7C3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE105865D6C3E9EA90D434AE /* Pods-elDiscount.debug.xcconfig */,
+				244FD01D654C7187242C5982 /* Pods-elDiscount.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F2B52F31FD54F42000492AE /* Build configuration list for PBXNativeTarget "elDiscount" */;
 			buildPhases = (
+				7C224FD00663A2DC08B0ECE9 /* [CP] Check Pods Manifest.lock */,
 				1F2B52C71FD54F42000492AE /* Sources */,
 				1F2B52C81FD54F42000492AE /* Frameworks */,
 				1F2B52C91FD54F42000492AE /* Resources */,
+				CAC695090A8FC671FF2BF21B /* [CP] Embed Pods Frameworks */,
+				80CA3BFDE75327E7F3A363B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FBD56E02015FBBE00DF4446 /* Login.storyboard in Resources */,
 				1F2B52D91FD54F42000492AE /* LaunchScreen.storyboard in Resources */,
 				1F2B52D61FD54F42000492AE /* Assets.xcassets in Resources */,
 				1F2B52D41FD54F42000492AE /* Main.storyboard in Resources */,
@@ -263,16 +322,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7C224FD00663A2DC08B0ECE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-elDiscount-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80CA3BFDE75327E7F3A363B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-elDiscount/Pods-elDiscount-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAC695090A8FC671FF2BF21B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-elDiscount/Pods-elDiscount-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/SJSegmentedScrollView/SJSegmentedScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SJSegmentedScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-elDiscount/Pods-elDiscount-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F2B52C71FD54F42000492AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FBD56E42015FE3B00DF4446 /* LoginViewController.swift in Sources */,
 				1F2B52D11FD54F42000492AE /* ViewController.swift in Sources */,
+				1FBD56E62016226D00DF4446 /* SignupViewController.swift in Sources */,
 				1F05C6602008DCFA00D6443C /* RoundedButton.swift in Sources */,
 				1F2B52CF1FD54F42000492AE /* AppDelegate.swift in Sources */,
+				1FBD56E22015FBF700DF4446 /* SegmentedViewController.swift in Sources */,
 				1F2B53011FD55A43000492AE /* Constants.swift in Sources */,
 				1FEB2F9E20076D930031052A /* Extensions.swift in Sources */,
+				1F09BB0A2016FC46008E9536 /* GlobalFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,10 +557,13 @@
 		};
 		1F2B52F41FD54F42000492AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE105865D6C3E9EA90D434AE /* Pods-elDiscount.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4459UQ4UL2;
 				INFOPLIST_FILE = elDiscount/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NeoBis.elDiscount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -450,10 +574,13 @@
 		};
 		1F2B52F51FD54F42000492AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244FD01D654C7187242C5982 /* Pods-elDiscount.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4459UQ4UL2;
 				INFOPLIST_FILE = elDiscount/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NeoBis.elDiscount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
