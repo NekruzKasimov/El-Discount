@@ -14,5 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    //test
+    @IBAction func deleteAfterTesting(_ sender: UIButton) {
+        let vc = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "SegmentedViewController")
+        present(vc, animated: true, completion: nil)
+    }
 }
 
