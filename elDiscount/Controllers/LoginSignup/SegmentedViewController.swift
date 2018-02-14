@@ -20,7 +20,7 @@ class SegmentedViewController: SJSegmentedViewController {
     func setupViewControllers() {
         let sb = UIStoryboard(name: "Login", bundle: nil)
         
-        let headerVC = sb.instantiateViewController(withIdentifier: "Head")
+        let headerVC = sb.instantiateViewController(withIdentifier: "LoginHeaderViewController")
         
         let loginVC = sb.instantiateViewController(withIdentifier: "LoginViewController")
         loginVC.title = "Логин"
@@ -39,9 +39,7 @@ class SegmentedViewController: SJSegmentedViewController {
         segmentedController.segmentShadow = SJShadow.clear()
         segmentedController.showsHorizontalScrollIndicator = false
         segmentedController.showsVerticalScrollIndicator = false
-        
-        present(segmentedController, animated: true, completion: nil)
-        
+                
         addChildViewController(segmentedController)
         self.view.addSubview(segmentedController.view)
         segmentedController.view.frame = self.view.bounds

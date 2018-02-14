@@ -19,8 +19,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         IQKeyboardManager.shared().isEnabled = true
+
+        //Customize Navigation Bar
+        UINavigationBar.appearance().barTintColor = Colors.green
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         
-        UITabBar.appearance().tintColor = Colors.green
+        //Customize Tab Bar
+        UITabBar.appearance().backgroundColor = .white
+        
         return true
     }
 

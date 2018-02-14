@@ -33,6 +33,9 @@ class LoginViewController: UIViewController {
     
     @IBAction func login(_ sender: RoundedButton) {
         sender.startIndicatorAnimation()
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "MainViewController")
+        present(vc, animated: true, completion: nil)
     }
     
     @IBAction func forgotPassword(_ sender: UIButton) {

@@ -28,7 +28,7 @@ class RoundedButton: UIButton {
     }
     
     private func confgureButton() {
-        self.setGradient(firstColor: Colors.green, secondColor: Colors.blue)
+        self.setGradientToButton()
         layer.cornerRadius = frame.size.height / 2
         layer.masksToBounds = true
         
