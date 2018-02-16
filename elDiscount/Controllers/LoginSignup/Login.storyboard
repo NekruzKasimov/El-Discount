@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GillSans.ttc">
+            <string>GillSans</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Segmented View Controller-->
         <scene sceneID="bed-4M-eZq">
@@ -32,20 +37,7 @@
                     <view key="view" contentMode="scaleToFill" id="drt-wx-x2C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wI2-rR-ckc">
-                                <rect key="frame" x="82.5" y="40" width="210" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="210" id="79t-cK-ksB"/>
-                                    <constraint firstAttribute="height" constant="80" id="jTg-fx-7Ol"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="04w-MT-mGt" firstAttribute="bottom" secondItem="wI2-rR-ckc" secondAttribute="bottom" constant="30" id="NMO-RT-kW0"/>
-                            <constraint firstItem="wI2-rR-ckc" firstAttribute="centerX" secondItem="drt-wx-x2C" secondAttribute="centerX" id="XdI-pP-39m"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="04w-MT-mGt"/>
                     </view>
                     <size key="freeformSize" width="375" height="150"/>
@@ -62,64 +54,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wI2-rR-ckc">
+                                <rect key="frame" x="50" y="70" width="260" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="oDc-m9-rnm"/>
+                                    <constraint firstAttribute="width" constant="260" id="vDi-7C-7LG"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DZ-HI-M1C" customClass="RoundedButton" customModule="elDiscount" customModuleProvider="target">
-                                <rect key="frame" x="87.5" y="240" width="200" height="44"/>
+                                <rect key="frame" x="87.5" y="455" width="200" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="6BX-aH-VM7"/>
                                     <constraint firstAttribute="width" constant="200" id="OmN-Hh-YbJ"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="19"/>
                                 <state key="normal" title="Войти"/>
                                 <connections>
                                     <action selector="login:" destination="3C1-0A-YM3" eventType="touchUpInside" id="GSc-Us-u5y"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybJ-2o-Y84">
-                                <rect key="frame" x="16" y="10" width="343" height="200"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qA8-gp-vgg" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="62.5" y="325" width="250" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bX8-hk-elv" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="62.5" y="255" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="5pA-nB-6ft"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zey-Dh-Cdb">
+                                <rect key="frame" x="63" y="365" width="112" height="32"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <state key="normal" title="Забыли пароль?">
+                                    <color key="titleColor" red="0.18064361810684204" green="0.8242526650428772" blue="0.6070294976234436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgotPassword:" destination="3C1-0A-YM3" eventType="touchUpInside" id="6GA-8F-QKG"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8B-n3-Nl1">
+                                <rect key="frame" x="65.5" y="607" width="244" height="60"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bX8-hk-elv" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="8" y="20" width="327" height="39"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qA8-gp-vgg" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="8" y="99" width="327" height="39.5"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zey-Dh-Cdb">
-                                        <rect key="frame" x="8" y="153.5" width="112" height="29"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                        <state key="normal" title="Забыли пароль?">
-                                            <color key="titleColor" red="0.18064361810684204" green="0.8242526650428772" blue="0.6070294976234436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нету аккаунта?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAG-dC-aEx">
+                                        <rect key="frame" x="0.0" y="21.5" width="88" height="17"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                        <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jq2-di-i4S">
+                                        <rect key="frame" x="100" y="14" width="144" height="32"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                        <state key="normal" title="Зарегистрироваться">
+                                            <color key="titleColor" red="0.18064361809999999" green="0.82425266500000005" blue="0.60702949760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="forgotPassword:" destination="3C1-0A-YM3" eventType="touchUpInside" id="6GA-8F-QKG"/>
+                                            <action selector="forgotPassword:" destination="3C1-0A-YM3" eventType="touchUpInside" id="AOD-ps-yqy"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="zey-Dh-Cdb" firstAttribute="leading" secondItem="ybJ-2o-Y84" secondAttribute="leading" constant="8" id="0BD-GH-wqz"/>
-                                    <constraint firstAttribute="trailing" secondItem="bX8-hk-elv" secondAttribute="trailing" constant="8" id="5z0-CU-2EC"/>
-                                    <constraint firstItem="zey-Dh-Cdb" firstAttribute="top" secondItem="qA8-gp-vgg" secondAttribute="bottom" constant="15" id="BVQ-OM-QGp"/>
-                                    <constraint firstItem="qA8-gp-vgg" firstAttribute="leading" secondItem="ybJ-2o-Y84" secondAttribute="leading" constant="8" id="HQ8-5l-GYL"/>
-                                    <constraint firstItem="qA8-gp-vgg" firstAttribute="top" secondItem="bX8-hk-elv" secondAttribute="bottom" constant="40" id="byR-OI-ZoS"/>
-                                    <constraint firstItem="bX8-hk-elv" firstAttribute="top" secondItem="ybJ-2o-Y84" secondAttribute="top" constant="20" id="c8c-cW-bkO"/>
-                                    <constraint firstAttribute="trailing" secondItem="qA8-gp-vgg" secondAttribute="trailing" constant="8" id="fRu-Zq-oRq"/>
-                                    <constraint firstAttribute="height" constant="200" id="onJ-lO-BlA"/>
-                                    <constraint firstItem="bX8-hk-elv" firstAttribute="leading" secondItem="ybJ-2o-Y84" secondAttribute="leading" constant="8" id="yUx-de-0Tk"/>
+                                    <constraint firstItem="CAG-dC-aEx" firstAttribute="leading" secondItem="e8B-n3-Nl1" secondAttribute="leading" id="4ms-zR-Vev"/>
+                                    <constraint firstItem="CAG-dC-aEx" firstAttribute="centerY" secondItem="e8B-n3-Nl1" secondAttribute="centerY" id="Q51-Br-bKq"/>
+                                    <constraint firstItem="Jq2-di-i4S" firstAttribute="centerY" secondItem="e8B-n3-Nl1" secondAttribute="centerY" id="Vcp-Jh-s9Z"/>
+                                    <constraint firstItem="Jq2-di-i4S" firstAttribute="leading" secondItem="CAG-dC-aEx" secondAttribute="trailing" constant="12" id="b1L-PF-f9X"/>
+                                    <constraint firstAttribute="height" constant="60" id="ePj-ts-cfQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jq2-di-i4S" secondAttribute="trailing" id="iqg-M2-yGd"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ybJ-2o-Y84" firstAttribute="top" secondItem="Ugl-xK-txy" secondAttribute="top" constant="10" id="2e6-ru-nqn"/>
+                            <constraint firstItem="zey-Dh-Cdb" firstAttribute="leading" secondItem="qA8-gp-vgg" secondAttribute="leading" id="054-OI-Ehl"/>
+                            <constraint firstItem="zey-Dh-Cdb" firstAttribute="top" secondItem="qA8-gp-vgg" secondAttribute="bottom" constant="10" id="3W1-Hs-AtC"/>
                             <constraint firstItem="6DZ-HI-M1C" firstAttribute="centerX" secondItem="Ugl-xK-txy" secondAttribute="centerX" id="6PQ-a4-eAo"/>
-                            <constraint firstItem="6DZ-HI-M1C" firstAttribute="top" secondItem="ybJ-2o-Y84" secondAttribute="bottom" constant="30" id="GoY-Qq-bmW"/>
-                            <constraint firstItem="QN3-PU-cHG" firstAttribute="trailing" secondItem="ybJ-2o-Y84" secondAttribute="trailing" constant="16" id="gSD-Mh-BDi"/>
-                            <constraint firstItem="ybJ-2o-Y84" firstAttribute="leading" secondItem="QN3-PU-cHG" secondAttribute="leading" constant="16" id="mCa-bm-HGl"/>
+                            <constraint firstItem="e8B-n3-Nl1" firstAttribute="centerX" secondItem="Ugl-xK-txy" secondAttribute="centerX" id="8Qx-QW-ReY"/>
+                            <constraint firstItem="qA8-gp-vgg" firstAttribute="leading" secondItem="bX8-hk-elv" secondAttribute="leading" id="93a-9c-y49"/>
+                            <constraint firstItem="qA8-gp-vgg" firstAttribute="top" secondItem="bX8-hk-elv" secondAttribute="bottom" constant="40" id="Gt7-bY-4Mp"/>
+                            <constraint firstItem="bX8-hk-elv" firstAttribute="centerX" secondItem="Ugl-xK-txy" secondAttribute="centerX" id="Xb1-Ao-OaX"/>
+                            <constraint firstItem="wI2-rR-ckc" firstAttribute="centerX" secondItem="Ugl-xK-txy" secondAttribute="centerX" constant="-7.5" id="Zdd-cb-1Sl"/>
+                            <constraint firstItem="wI2-rR-ckc" firstAttribute="top" secondItem="Ugl-xK-txy" secondAttribute="top" constant="70" id="eif-Qh-x4Z"/>
+                            <constraint firstItem="qA8-gp-vgg" firstAttribute="trailing" secondItem="bX8-hk-elv" secondAttribute="trailing" id="j9c-6f-Nqh"/>
+                            <constraint firstItem="bX8-hk-elv" firstAttribute="top" secondItem="wI2-rR-ckc" secondAttribute="bottom" constant="70" id="r1k-6U-6zy"/>
+                            <constraint firstItem="6DZ-HI-M1C" firstAttribute="top" secondItem="qA8-gp-vgg" secondAttribute="bottom" constant="100" id="ri0-xI-tKz"/>
+                            <constraint firstItem="QN3-PU-cHG" firstAttribute="bottom" secondItem="e8B-n3-Nl1" secondAttribute="bottom" id="ulI-ZX-2rc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QN3-PU-cHG"/>
                     </view>
@@ -130,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8lt-qP-64y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-151" y="99"/>
+            <point key="canvasLocation" x="-151.19999999999999" y="98.50074962518741"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="oWi-mF-4pR">
@@ -155,31 +179,31 @@
                                 <rect key="frame" x="16" y="10" width="343" height="400"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pHA-mS-pbM" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="8" y="20" width="327" height="39"/>
+                                        <rect key="frame" x="8" y="20" width="327" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2hj-bJ-SeW" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="8" y="99" width="327" height="39.5"/>
+                                        <rect key="frame" x="8" y="90" width="327" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p2C-V4-K5M" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="8" y="178.5" width="327" height="39"/>
+                                        <rect key="frame" x="8" y="160" width="327" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PJj-CP-d96" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="8" y="257" width="327" height="39.5"/>
+                                        <rect key="frame" x="8" y="229.5" width="327" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dut-TN-mi4" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="8" y="337" width="327" height="39"/>
+                                        <rect key="frame" x="8" y="300" width="327" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -245,6 +269,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="245" height="91"/>
+        <image name="Logo" width="602" height="264"/>
     </resources>
 </document>

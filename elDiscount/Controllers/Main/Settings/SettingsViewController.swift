@@ -36,7 +36,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 5 {
             let sb = UIStoryboard(name: "Login", bundle: nil)
-            let vc = sb.instantiateViewController(withIdentifier: "SegmentedViewController")
+            let vc = sb.instantiateViewController(withIdentifier: "LoginViewController")
             present(vc, animated: true, completion: nil)
         }
     }

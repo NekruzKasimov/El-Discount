@@ -36,7 +36,7 @@ class SegmentedViewController: SJSegmentedViewController {
         segmentedController.segmentTitleFont = UIFont.boldSystemFont(ofSize: 16)
         segmentedController.selectedSegmentViewColor = Colors.green
         segmentedController.segmentBounces = true
-        segmentedController.segmentShadow = SJShadow.clear()
+        segmentedController.segmentShadow = SJShadow.white()
         segmentedController.showsHorizontalScrollIndicator = false
         segmentedController.showsVerticalScrollIndicator = false
                 
