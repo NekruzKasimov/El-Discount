@@ -48,6 +48,7 @@
 		1FEBB66020288CAB00CD1FFD /* CompanyContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBB65F20288CAB00CD1FFD /* CompanyContactsViewController.swift */; };
 		1FEBB66220288CBB00CD1FFD /* CompanyDiscountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBB66120288CBB00CD1FFD /* CompanyDiscountsViewController.swift */; };
 		1FEBB66420288CCB00CD1FFD /* CompanyLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBB66320288CCB00CD1FFD /* CompanyLocationViewController.swift */; };
+		33E5CE492037673200650C7C /* UITextFiled+PhoneNumberDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E5CE482037673200650C7C /* UITextFiled+PhoneNumberDelegate.swift */; };
 		B1CA430AD2F3A8F7BB638FE8 /* Pods_elDiscount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B802318681CC83709075A364 /* Pods_elDiscount.framework */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +118,7 @@
 		1FEBB66120288CBB00CD1FFD /* CompanyDiscountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDiscountsViewController.swift; sourceTree = "<group>"; };
 		1FEBB66320288CCB00CD1FFD /* CompanyLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyLocationViewController.swift; sourceTree = "<group>"; };
 		244FD01D654C7187242C5982 /* Pods-elDiscount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elDiscount.release.xcconfig"; path = "Pods/Target Support Files/Pods-elDiscount/Pods-elDiscount.release.xcconfig"; sourceTree = "<group>"; };
+		33E5CE482037673200650C7C /* UITextFiled+PhoneNumberDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFiled+PhoneNumberDelegate.swift"; sourceTree = "<group>"; };
 		B802318681CC83709075A364 /* Pods_elDiscount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_elDiscount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE105865D6C3E9EA90D434AE /* Pods-elDiscount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elDiscount.debug.xcconfig"; path = "Pods/Target Support Files/Pods-elDiscount/Pods-elDiscount.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,10 +162,7 @@
 			children = (
 				1F2B53001FD55A43000492AE /* Constants.swift */,
 				1FEB2F9D20076D930031052A /* Extensions + UIView.swift */,
-				1F05C65F2008DCFA00D6443C /* RoundedButton.swift */,
 				1F09BB092016FC46008E9536 /* GlobalFunctions.swift */,
-				1F381EFF20317B6D005C98F9 /* HTTPStatusCode.swift */,
-				1F381F012031A7CF005C98F9 /* ApiAddress.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -193,6 +192,8 @@
 		1F2B52CD1FD54F42000492AE /* elDiscount */ = {
 			isa = PBXGroup;
 			children = (
+				33E5CE472037671000650C7C /* Extensions */,
+				33E5CE4620375B4000650C7C /* Views */,
 				33E5CE4520370D8200650C7C /* Network */,
 				1F09BB082016FBF8008E9536 /* SupportingFiles */,
 				1F2DDACC202DB20E00B7B341 /* Models */,
@@ -351,8 +352,26 @@
 		33E5CE4520370D8200650C7C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				1F381F012031A7CF005C98F9 /* ApiAddress.swift */,
+				1F381EFF20317B6D005C98F9 /* HTTPStatusCode.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		33E5CE4620375B4000650C7C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F05C65F2008DCFA00D6443C /* RoundedButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		33E5CE472037671000650C7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				33E5CE482037673200650C7C /* UITextFiled+PhoneNumberDelegate.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -573,6 +592,7 @@
 				1F05C6602008DCFA00D6443C /* RoundedButton.swift in Sources */,
 				1F2DDACE202DB22300B7B341 /* Companies.swift in Sources */,
 				1F2B52CF1FD54F42000492AE /* AppDelegate.swift in Sources */,
+				33E5CE492037673200650C7C /* UITextFiled+PhoneNumberDelegate.swift in Sources */,
 				1FBD56E22015FBF700DF4446 /* SegmentedViewController.swift in Sources */,
 				1F2B53011FD55A43000492AE /* Constants.swift in Sources */,
 				1FAE1F17202973E100C8788F /* CompanyHeaderViewController.swift in Sources */,

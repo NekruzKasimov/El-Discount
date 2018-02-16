@@ -13,12 +13,14 @@ struct GlobalFunctions {
     
     static func configure(textField: SkyFloatingLabelTextField, withText text:String, placeholder:String, tag:Int){
         textField.autocorrectionType = .no
-        textField.font = UIFont(name: ".SFUIText", size: 15)
+		textField.font = AppStyle.Font.regular
+		textField.titleFont = AppStyle.Font.regular
+		textField.placeholderFont = AppStyle.Font.regular
         textField.returnKeyType = .done
         textField.placeholder = placeholder
         textField.title = text
-        textField.selectedTitleColor = Colors.green
-        textField.selectedLineColor = Colors.green
+        textField.selectedTitleColor = AppStyle.Color.green
+        textField.selectedLineColor = AppStyle.Color.green
         textField.tag = tag
     }
 }
