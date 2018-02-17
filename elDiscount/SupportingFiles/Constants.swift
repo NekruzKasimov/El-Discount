@@ -7,16 +7,41 @@
 //
 
 import UIKit
+struct Storyboard {
+	struct Login {
+		static let itself : UIStoryboard =
+			UIStoryboard(name: "Login", bundle: nil)
+		
+		static let loginVC : LoginViewController = Storyboard.Login.itself
+				.instantiateViewController(withIdentifier:
+					"LoginViewController") as! LoginViewController
+		
+		static let signupVC : SignupViewController = Storyboard.Login.itself
+			.instantiateViewController(withIdentifier:
+				"SignupViewController") as! SignupViewController
+		
+	}
+	struct Main {
+		static let itself : UIStoryboard =
+			UIStoryboard(name: "Main", bundle: nil)
+		static let mainVC : MainViewController = Storyboard.Main.itself
+			.instantiateViewController(withIdentifier:
+				"MainViewController") as! MainViewController
+	}
+}
 struct Constants {
-	
-	struct Storyboard {
-		static let main = UIStoryboard(name: "Main", bundle: nil)
-		static let login = UIStoryboard(name: "Login", bundle: nil)
+	struct StorageKey {
+		static let login = "ED_userLogin"
+		static let password = "ED_userPassword"
 	}
-	
-	struct ControllerID {
-		static let mainVC = "MainViewController"
-	}
+//	struct Storyboard {
+//		static let main = UIStoryboard(name: "Main", bundle: nil)
+//		static let login = UIStoryboard(name: "Login", bundle: nil)
+//	}
+//
+//	struct ControllerID {
+//		static let mainVC = "MainViewController"
+//	}
 	
 }
 

@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
 	
 	func setupLoginTextField() {
 		loginTextField.accessibilityIdentifier = "loginTextField"
-		GlobalFunctions.configure(textField: loginTextField, withText: "Номер телефона:", placeholder: "Номер телефона", tag: 0)
+		GlobalFunctions.configure(textField: loginTextField, withText: "Номер телефона", placeholder: "Номер телефона", tag: 0)
 		loginTextField.text = "0"
 		loginTextField.delegate = textFieldPhoneNumberDelegate
 	}
@@ -34,12 +34,12 @@ class LoginViewController: UIViewController {
 	}
 	
 	func showRegistration() {
-		
+		let vc = Storyboard.Login.signupVC
+		present(vc, animated: false, completion: nil)
 	}
 	
 	func showMainController() {
-		let vc = Constants.Storyboard.main
-			.instantiateViewController(withIdentifier: Constants.ControllerID.mainVC)
+		let vc = Storyboard.Main.mainVC
 		present(vc, animated: true, completion: nil)
 	}
 	
@@ -49,6 +49,9 @@ class LoginViewController: UIViewController {
 		sender.startIndicatorAnimation()
 		showMainController()
     }
+	@IBAction func showRegistration(_ sender: UIButton) {
+		showRegistration()
+	}
     
     @IBAction func forgotPassword(_ sender: UIButton) {
         
