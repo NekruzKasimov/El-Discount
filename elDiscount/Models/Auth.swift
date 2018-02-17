@@ -15,13 +15,14 @@ struct Auth {
 		var dic: [String: Any] = [:]
 		dic.updateValue(phone, forKey: "phone")
 		dic.updateValue(password, forKey: "password")
+		return dic
 	}
 }
 
 struct SignUp {
 	var auth: Auth
-	var firstName: String = first_name
-	var lastName: String = last_name
+	var firstName: String
+	var lastName: String
 	
 	func toDic() -> [String: Any] {
 		var dic: [String: Any] = auth.toDic()

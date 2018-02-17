@@ -10,7 +10,10 @@ import UIKit
 import SkyFloatingLabelTextField
 
 class SignupViewController: UIViewController {
+	
 	@IBOutlet weak var phoneNumberTextField: SkyFloatingLabelTextField!
+	@IBOutlet weak var firstNameTextField: SkyFloatingLabelTextField!
+	@IBOutlet weak var lastNameTextField: SkyFloatingLabelTextField!
 	@IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
 	@IBOutlet weak var confirmPasswordTextField: SkyFloatingLabelTextField!
 	let textFieldPhoneNumberDelegate = TextFieldPhoneNumberDelegate()
@@ -21,20 +24,43 @@ class SignupViewController: UIViewController {
     }
 	
 	func setupTextFields() {
+		setupPhoneTextField()
+		setupFirstnameTextField()
+		setupLastnameTextField()
+		setupPasswordTextField()
+		setupConfirmPasswordTextField()
+	}
+	
+	func setupPhoneTextField() {
 		phoneNumberTextField.accessibilityIdentifier = "phoneNumberTextField"
-		GlobalFunctions.configure(textField: phoneNumberTextField, withText: "Номер телефона", placeholder: "Номер телефона", tag: 2)
+		GlobalFunctions.configure(textField: phoneNumberTextField, withText: "Номер телефона", placeholder: "Номер телефона", tag: 1)
 		phoneNumberTextField.keyboardType = .phonePad
 		phoneNumberTextField.text = "0"
 		phoneNumberTextField.delegate = textFieldPhoneNumberDelegate
-		
+	}
+	
+	func setupFirstnameTextField() {
+		firstNameTextField.accessibilityIdentifier = "firstNameTextField"
+		GlobalFunctions.configure(textField: firstNameTextField, withText: "Имя", placeholder: "Ваше имя", tag: 2)
+	}
+	
+	func setupLastnameTextField() {
+		lastNameTextField.accessibilityIdentifier = "lastNameTextField"
+		GlobalFunctions.configure(textField: lastNameTextField, withText: "Фамилия", placeholder: "Ваша фамилия", tag: 3)
+	}
+	
+	func setupPasswordTextField() {
 		passwordTextField.accessibilityIdentifier = "passwordTextField"
-		GlobalFunctions.configure(textField: passwordTextField, withText: "Пароль:", placeholder: "Пароль", tag: 3)
+		GlobalFunctions.configure(textField: passwordTextField, withText: "Пароль", placeholder: "Пароль", tag: 4)
 		passwordTextField.isSecureTextEntry = true
-		
+	}
+	
+	func setupConfirmPasswordTextField() {
 		confirmPasswordTextField.accessibilityIdentifier = "confirmPasswordTextField"
-		GlobalFunctions.configure(textField: confirmPasswordTextField, withText: "Подтвердить пароль:", placeholder: "Подтвердить пароль", tag: 4)
+		GlobalFunctions.configure(textField: confirmPasswordTextField, withText: "Подтвердить пароль", placeholder: "Подтвердить пароль", tag: 5)
 		confirmPasswordTextField.isSecureTextEntry = true
 	}
+	
 	//MARK: - Actions
     
     @IBAction func signup(_ sender: RoundedButton) {
