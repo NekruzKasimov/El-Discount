@@ -34,7 +34,7 @@ class SegmentedViewController: SJSegmentedViewController {
         segmentedController.segmentViewHeight = 60
         segmentedController.segmentTitleColor = .gray
         segmentedController.segmentTitleFont = UIFont.boldSystemFont(ofSize: 16)
-        segmentedController.selectedSegmentViewColor = Colors.green
+		segmentedController.selectedSegmentViewColor = AppStyle.Color.green
         segmentedController.segmentBounces = true
         segmentedController.segmentShadow = SJShadow.white()
         segmentedController.showsHorizontalScrollIndicator = false

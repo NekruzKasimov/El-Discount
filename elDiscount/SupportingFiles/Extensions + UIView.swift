@@ -13,7 +13,7 @@ extension UIView {
     func setGradientToButton() {
         let gradient = CAGradientLayer()
         gradient.frame = bounds
-        gradient.colors = [Colors.green.cgColor, Colors.blue.cgColor]
+        gradient.colors = [AppStyle.Color.green.cgColor, AppStyle.Color.blue.cgColor]
         gradient.locations = [0.0, 1.0]
         gradient.startPoint = CGPoint(x: 1.0, y: 1.0)
         gradient.endPoint = CGPoint(x: 0.0, y: 0.0)
@@ -23,7 +23,7 @@ extension UIView {
     func setGradientToBackground() {
         let gradient = CAGradientLayer()
         gradient.frame = bounds
-        gradient.colors = [Colors.green.cgColor, Colors.blue.cgColor]
+        gradient.colors = [AppStyle.Color.green.cgColor, AppStyle.Color.blue.cgColor]
         gradient.locations = [0.0, 1.0]
         gradient.startPoint = CGPoint(x: 0.0, y: 0.0)
         gradient.endPoint = CGPoint(x: 0.0, y: 1.0)

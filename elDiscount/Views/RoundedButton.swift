@@ -53,8 +53,8 @@ class RoundedButton: UIButton {
         isClicked = bool
         
         let title      = isClicked ? "pressed" : "press"
-        let titleColor = isClicked ? .white : Colors.blue
-        let background = isClicked ? Colors.blue : .clear
+        let titleColor = isClicked ? .white : AppStyle.Color.blue
+        let background = isClicked ? AppStyle.Color.blue : .clear
         
         backgroundColor = background
         setTitle(title, for: .normal)

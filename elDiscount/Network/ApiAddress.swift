@@ -14,11 +14,13 @@ class ApiAddress {
     var domain = ""
     var endpoint: String = ""
     var param: String = ""
-    
+	init(endpoint: String) {
+		self.endpoint = endpoint
+	}
     func getURL() -> URL? {
         return URL(string: getURLString())
     }
-    
+
     func getURLString() -> String {
         return "\(scheme)://\(domain)/\(endpoint)/\(param)"
     }

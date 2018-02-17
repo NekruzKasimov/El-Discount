@@ -49,6 +49,9 @@
 		1FEBB66220288CBB00CD1FFD /* CompanyDiscountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBB66120288CBB00CD1FFD /* CompanyDiscountsViewController.swift */; };
 		1FEBB66420288CCB00CD1FFD /* CompanyLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBB66320288CCB00CD1FFD /* CompanyLocationViewController.swift */; };
 		333FC3022037E2B800125710 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333FC3012037E2B800125710 /* DataManager.swift */; };
+		333FC3042037FFEC00125710 /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333FC3032037FFEC00125710 /* HTTPRequestManager.swift */; };
+		333FC306203800D300125710 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333FC305203800D300125710 /* ServerManager.swift */; };
+		333FC3082038069A00125710 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333FC3072038069A00125710 /* Auth.swift */; };
 		33E5CE492037673200650C7C /* UITextFiled+PhoneNumberDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E5CE482037673200650C7C /* UITextFiled+PhoneNumberDelegate.swift */; };
 		B1CA430AD2F3A8F7BB638FE8 /* Pods_elDiscount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B802318681CC83709075A364 /* Pods_elDiscount.framework */; };
 /* End PBXBuildFile section */
@@ -120,6 +123,9 @@
 		1FEBB66320288CCB00CD1FFD /* CompanyLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyLocationViewController.swift; sourceTree = "<group>"; };
 		244FD01D654C7187242C5982 /* Pods-elDiscount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elDiscount.release.xcconfig"; path = "Pods/Target Support Files/Pods-elDiscount/Pods-elDiscount.release.xcconfig"; sourceTree = "<group>"; };
 		333FC3012037E2B800125710 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		333FC3032037FFEC00125710 /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
+		333FC305203800D300125710 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		333FC3072038069A00125710 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		33E5CE482037673200650C7C /* UITextFiled+PhoneNumberDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFiled+PhoneNumberDelegate.swift"; sourceTree = "<group>"; };
 		B802318681CC83709075A364 /* Pods_elDiscount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_elDiscount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE105865D6C3E9EA90D434AE /* Pods-elDiscount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elDiscount.debug.xcconfig"; path = "Pods/Target Support Files/Pods-elDiscount/Pods-elDiscount.debug.xcconfig"; sourceTree = "<group>"; };
@@ -234,6 +240,7 @@
 				1F2DDACF202DB93300B7B341 /* NewUser.swift */,
 				1F2DDAD2202DC6D600B7B341 /* NewCashier.swift */,
 				1F2DDAD4202DC7BC00B7B341 /* Users.swift */,
+				333FC3072038069A00125710 /* Auth.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -357,6 +364,8 @@
 			children = (
 				1F381F012031A7CF005C98F9 /* ApiAddress.swift */,
 				1F381EFF20317B6D005C98F9 /* HTTPStatusCode.swift */,
+				333FC3032037FFEC00125710 /* HTTPRequestManager.swift */,
+				333FC305203800D300125710 /* ServerManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -584,6 +593,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				333FC306203800D300125710 /* ServerManager.swift in Sources */,
 				1FEBB64520286CDA00CD1FFD /* CompaniesViewController.swift in Sources */,
 				333FC3022037E2B800125710 /* DataManager.swift in Sources */,
 				1F2DDAD0202DB93300B7B341 /* NewUser.swift in Sources */,
@@ -600,6 +610,7 @@
 				1FBD56E22015FBF700DF4446 /* SegmentedViewController.swift in Sources */,
 				1F2B53011FD55A43000492AE /* Constants.swift in Sources */,
 				1FAE1F17202973E100C8788F /* CompanyHeaderViewController.swift in Sources */,
+				333FC3082038069A00125710 /* Auth.swift in Sources */,
 				1FEBB66420288CCB00CD1FFD /* CompanyLocationViewController.swift in Sources */,
 				1FEBB66220288CBB00CD1FFD /* CompanyDiscountsViewController.swift in Sources */,
 				1FEBB65B20288B6200CD1FFD /* CompanySegmentedViewController.swift in Sources */,
@@ -612,6 +623,7 @@
 				1F381F022031A7CF005C98F9 /* ApiAddress.swift in Sources */,
 				1F2DDAD5202DC7BC00B7B341 /* Users.swift in Sources */,
 				1FEBB6572028819B00CD1FFD /* CategoriesViewController.swift in Sources */,
+				333FC3042037FFEC00125710 /* HTTPRequestManager.swift in Sources */,
 				1FEBB64920286E3E00CD1FFD /* HomeViewController.swift in Sources */,
 				1FEBB6592028822A00CD1FFD /* CompaniesCollectionViewCell.swift in Sources */,
 			);

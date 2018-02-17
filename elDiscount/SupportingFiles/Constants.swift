@@ -7,14 +7,36 @@
 //
 
 import UIKit
+
+struct Constants {
+	struct StorageKey {
+		static let login = "ED_userLogin"
+		static let password = "ED_userPassword"
+	}
+	
+	struct Network {
+		struct ErrorMessage {
+			static let NO_INTERNET_CONNECTION = "No internet connection"
+			static let UNABLE_LOAD_DATA = "Unable load data"
+			static let NO_HTTP_STATUS_CODE = "Unable to get response HTTP status code"
+			static let UNAUTHORIZED = "Unauthorized error"
+		}
+		
+		struct EndPoints {
+			static let Login = "login"
+		}
+	}
+	
+}
+
 struct Storyboard {
 	struct Login {
 		static let itself : UIStoryboard =
 			UIStoryboard(name: "Login", bundle: nil)
 		
 		static let loginVC : LoginViewController = Storyboard.Login.itself
-				.instantiateViewController(withIdentifier:
-					"LoginViewController") as! LoginViewController
+			.instantiateViewController(withIdentifier:
+				"LoginViewController") as! LoginViewController
 		
 		static let signupVC : SignupViewController = Storyboard.Login.itself
 			.instantiateViewController(withIdentifier:
@@ -29,28 +51,13 @@ struct Storyboard {
 				"MainViewController") as! MainViewController
 	}
 }
-struct Constants {
-	struct StorageKey {
-		static let login = "ED_userLogin"
-		static let password = "ED_userPassword"
-	}
-//	struct Storyboard {
-//		static let main = UIStoryboard(name: "Main", bundle: nil)
-//		static let login = UIStoryboard(name: "Login", bundle: nil)
-//	}
+
+
+//struct Colors {
 //
-//	struct ControllerID {
-//		static let mainVC = "MainViewController"
-//	}
-	
-}
-
-
-struct Colors {
-    
-    static let blue = UIColor(red: 121/255, green: 153/255, blue: 255/255, alpha: 1)
-    static let green = UIColor(red: 35/255, green: 222/255, blue: 160/255, alpha: 1)
-}
+//    static let blue = UIColor(red: 121/255, green: 153/255, blue: 255/255, alpha: 1)
+//    static let green = UIColor(red: 35/255, green: 222/255, blue: 160/255, alpha: 1)
+//}
 
 struct AppStyle {
 	
