@@ -12,6 +12,7 @@ struct Constants {
 	struct StorageKey {
 		static let login = "ED_userLogin"
 		static let password = "ED_userPassword"
+		static let token = "ED_token"
 	}
 	
 	struct Network {
@@ -23,7 +24,8 @@ struct Constants {
 		}
 		
 		struct EndPoints {
-			static let Login = "login"
+			static let signup = "users"
+			static let login = "auth"
 		}
 	}
 	
@@ -74,4 +76,5 @@ struct AppStyle {
 		static let blue = UIColor(red: 121/255, green: 153/255, blue: 255/255, alpha: 1)
 		static let green = UIColor(red: 35/255, green: 222/255, blue: 160/255, alpha: 1)
 	}
+	
 }

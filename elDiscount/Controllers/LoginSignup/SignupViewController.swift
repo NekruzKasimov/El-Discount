@@ -61,10 +61,58 @@ class SignupViewController: UIViewController {
 		confirmPasswordTextField.isSecureTextEntry = true
 	}
 	
+	func canSignUp() -> Bool {
+		guard passwordTextField.text!.count >= 5 else {
+			showErrorAlert("Пароль должен состоять из более чем 5 символов")
+			return false
+		}
+		guard confirmPasswordTextField.text! == passwordTextField.text! else {
+			showErrorAlert("Ваши пароли не совпадают")
+			return false
+		}
+		guard !firstNameTextField.text!.isEmpty else {
+			showErrorAlert("Пожалуйста, введите имя")
+			return false
+		}
+		guard !lastNameTextField.text!.isEmpty else {
+			showErrorAlert("Пожалуйста, введите фамилию")
+			return false
+		}
+		return true
+	}
+	
+	func getSignupModel() -> SignUpModel {
+		let auth = AuthModel(phone: phoneNumberTextField.text!,
+							 password: passwordTextField.text!)
+		let signupModel =
+			SignUpModel(phone: phoneNumberTextField.text!,
+						password: passwordTextField.text!,
+						firstName: firstNameTextField.text!,
+						lastName: lastNameTextField.text!)
+		return signupModel
+	}
+	func showMainController() {
+		let vc = Storyboard.Main.mainVC
+		present(vc, animated: true, completion: nil)
+	}
+	
 	//MARK: - Actions
     
     @IBAction func signup(_ sender: RoundedButton) {
-        sender.startIndicatorAnimation()
+		guard canSignUp() else {
+			return
+		}
+		sender.startIndicatorAnimation()
+		ServerManager.shared.signup(getSignupModel(),
+									completion: { (isOK) in
+										if isOK {
+											self.showMainController()
+			}
+		}) { (message) in
+			self.showErrorAlert(message)
+		}
+		
+		
     }
 	
 	@IBAction func login(_ sender: RoundedButton) {

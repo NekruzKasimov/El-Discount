@@ -19,6 +19,16 @@ struct DataManager {
 		return true
 	}()
 	
+	static var token: String {
+		get {
+			return UserDefaults.standard.string(forKey:
+				Constants.StorageKey.token) ?? ""
+		}
+		set {
+			UserDefaults.standard.set(newValue, forKey: Constants.StorageKey.token)
+		}
+	}
+	
 	static var userLogin: String? =
 		UserDefaults.standard.string(forKey:
 		Constants.StorageKey.login)

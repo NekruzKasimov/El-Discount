@@ -52,6 +52,7 @@
 		333FC3042037FFEC00125710 /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333FC3032037FFEC00125710 /* HTTPRequestManager.swift */; };
 		333FC306203800D300125710 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333FC305203800D300125710 /* ServerManager.swift */; };
 		333FC3082038069A00125710 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333FC3072038069A00125710 /* Auth.swift */; };
+		333FC30A2038120300125710 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333FC3092038120300125710 /* UIViewController+Alert.swift */; };
 		33E5CE492037673200650C7C /* UITextFiled+PhoneNumberDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E5CE482037673200650C7C /* UITextFiled+PhoneNumberDelegate.swift */; };
 		B1CA430AD2F3A8F7BB638FE8 /* Pods_elDiscount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B802318681CC83709075A364 /* Pods_elDiscount.framework */; };
 /* End PBXBuildFile section */
@@ -126,6 +127,7 @@
 		333FC3032037FFEC00125710 /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
 		333FC305203800D300125710 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		333FC3072038069A00125710 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		333FC3092038120300125710 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		33E5CE482037673200650C7C /* UITextFiled+PhoneNumberDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFiled+PhoneNumberDelegate.swift"; sourceTree = "<group>"; };
 		B802318681CC83709075A364 /* Pods_elDiscount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_elDiscount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE105865D6C3E9EA90D434AE /* Pods-elDiscount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-elDiscount.debug.xcconfig"; path = "Pods/Target Support Files/Pods-elDiscount/Pods-elDiscount.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			children = (
 				1F2B53001FD55A43000492AE /* Constants.swift */,
 				1FEB2F9D20076D930031052A /* Extensions + UIView.swift */,
+				333FC3092038120300125710 /* UIViewController+Alert.swift */,
 				1F09BB092016FC46008E9536 /* GlobalFunctions.swift */,
 				333FC3012037E2B800125710 /* DataManager.swift */,
 			);
@@ -596,6 +599,7 @@
 				333FC306203800D300125710 /* ServerManager.swift in Sources */,
 				1FEBB64520286CDA00CD1FFD /* CompaniesViewController.swift in Sources */,
 				333FC3022037E2B800125710 /* DataManager.swift in Sources */,
+				333FC30A2038120300125710 /* UIViewController+Alert.swift in Sources */,
 				1F2DDAD0202DB93300B7B341 /* NewUser.swift in Sources */,
 				1FEBB64D2028752F00CD1FFD /* DiscountsViewController.swift in Sources */,
 				1FBD56E42015FE3B00DF4446 /* LoginViewController.swift in Sources */,

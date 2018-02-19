@@ -33,8 +33,7 @@ class RoundedButton: UIButton {
         layer.masksToBounds = true
         
         setTitleColor(.white, for: .normal)
-        //titleLabel?.font = UIFont.init(name: "GillSans-Regular", size: 16)
-			//UIFont.boldSystemFont(ofSize: 16)
+        titleLabel?.font = AppStyle.Font.bold
     }
     
     private func confgureIndicator(){

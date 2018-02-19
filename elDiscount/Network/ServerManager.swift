@@ -20,12 +20,24 @@ class ServerManager: HTTPRequestManager  {
 	}
 	
 	
-//	func signUp(newUser: NewUser, completion: @escaping (JSON)-> Void,error: @escaping (String)-> Void) {
-//		//let param = category.toDict()
-//		self.post(endpoint: Constants.Network.EndPoints.SignUp, serverType: , parameters: newUser.toDictionary(), completion: { (json) in
-//			//let message = json[""]
-//			completion(json)
-//		}, error: error)
-//	}
+	func signup(_ model: SignUpModel, completion: @escaping (Bool)-> Void, error: @escaping (String)-> Void) {
+		self.post(endpoint: Constants.Network.EndPoints.signup, parameters: model.toDic(), completion: { (json) in
+			//temporary shit
+			self.login(model.auth, completion: { (isOk) in
+				if isOk {
+					completion(true)
+				} else {
+					completion(false)
+				}
+			}, error: error)
+		}, error: error)
+	}
+	
+	func login(_ model: AuthModel, completion: @escaping (Bool)-> Void, error: @escaping (String)-> Void) {
+		self.post(endpoint: Constants.Network.EndPoints.login, parameters: model.toDic(), completion: { (json) in
+			DataManager.token = json["token"].stringValue
+			completion(true)
+		}, error: error)
+	}
 
 }

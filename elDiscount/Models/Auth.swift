@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Auth {
+struct AuthModel {
 	var phone: String
 	var password: String
 	func toDic() -> [String: Any] {
@@ -19,10 +19,16 @@ struct Auth {
 	}
 }
 
-struct SignUp {
-	var auth: Auth
+class SignUpModel {
+	var auth: AuthModel
 	var firstName: String
 	var lastName: String
+	init(phone: String, password: String, firstName: String, lastName: String) {
+		self.auth = AuthModel(phone: phone,
+							  password: phone)
+		self.firstName = firstName
+		self.lastName = lastName
+	}
 	
 	func toDic() -> [String: Any] {
 		var dic: [String: Any] = auth.toDic()
