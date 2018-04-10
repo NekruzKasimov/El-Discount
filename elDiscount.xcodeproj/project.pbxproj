@@ -22,6 +22,10 @@
 		1F2DDAD5202DC7BC00B7B341 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2DDAD4202DC7BC00B7B341 /* Users.swift */; };
 		1F381F0020317B6D005C98F9 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F381EFF20317B6D005C98F9 /* HTTPStatusCode.swift */; };
 		1F381F022031A7CF005C98F9 /* ApiAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F381F012031A7CF005C98F9 /* ApiAddress.swift */; };
+		1F5C7EBF207C85310089E2FC /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C7EBE207C85310089E2FC /* CustomView.swift */; };
+		1F5C7EC1207C8B2F0089E2FC /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C7EC0207C8B2F0089E2FC /* CategoriesTableViewCell.swift */; };
+		1F5C7FB3207CDD360089E2FC /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C7FB2207CDD360089E2FC /* HomeCollectionViewCell.swift */; };
+		1F5C7FB5207CDDA90089E2FC /* DiscountsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C7FB4207CDDA90089E2FC /* DiscountsCollectionViewCell.swift */; };
 		1FAE1F17202973E100C8788F /* CompanyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE1F16202973E000C8788F /* CompanyHeaderViewController.swift */; };
 		1FBD56E02015FBBE00DF4446 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FBD56DF2015FBBE00DF4446 /* Login.storyboard */; };
 		1FBD56E22015FBF700DF4446 /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBD56E12015FBF700DF4446 /* SegmentedViewController.swift */; };
@@ -96,6 +100,10 @@
 		1F2DDAD4202DC7BC00B7B341 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		1F381EFF20317B6D005C98F9 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
 		1F381F012031A7CF005C98F9 /* ApiAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAddress.swift; sourceTree = "<group>"; };
+		1F5C7EBE207C85310089E2FC /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		1F5C7EC0207C8B2F0089E2FC /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		1F5C7FB2207CDD360089E2FC /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		1F5C7FB4207CDDA90089E2FC /* DiscountsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountsCollectionViewCell.swift; sourceTree = "<group>"; };
 		1FAE1F16202973E000C8788F /* CompanyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyHeaderViewController.swift; sourceTree = "<group>"; };
 		1FBD56DF2015FBBE00DF4446 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		1FBD56E12015FBF700DF4446 /* SegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
@@ -258,6 +266,15 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		1F5C7EC2207C91BF0089E2FC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1FEBB6562028819B00CD1FFD /* CategoriesViewController.swift */,
+				1F5C7EC0207C8B2F0089E2FC /* CategoriesTableViewCell.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		1FB12845202868E500CDD6B7 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,9 +322,9 @@
 			isa = PBXGroup;
 			children = (
 				1FEBB64220286CC800CD1FFD /* Companies.storyboard */,
+				1F5C7EC2207C91BF0089E2FC /* Categories */,
 				1FEBB64420286CDA00CD1FFD /* CompaniesViewController.swift */,
 				1FEBB6582028822A00CD1FFD /* CompaniesCollectionViewCell.swift */,
-				1FEBB6562028819B00CD1FFD /* CategoriesViewController.swift */,
 				1FEBB65C20288C5200CD1FFD /* About Company */,
 			);
 			path = Companies;
@@ -318,6 +335,7 @@
 			children = (
 				1FEBB64620286E2A00CD1FFD /* Home.storyboard */,
 				1FEBB64820286E3E00CD1FFD /* HomeViewController.swift */,
+				1F5C7FB2207CDD360089E2FC /* HomeCollectionViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -327,6 +345,7 @@
 			children = (
 				1FEBB64A2028752500CD1FFD /* Discounts.storyboard */,
 				1FEBB64C2028752F00CD1FFD /* DiscountsViewController.swift */,
+				1F5C7FB4207CDDA90089E2FC /* DiscountsCollectionViewCell.swift */,
 			);
 			path = Discounts;
 			sourceTree = "<group>";
@@ -377,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				1F05C65F2008DCFA00D6443C /* RoundedButton.swift */,
+				1F5C7EBE207C85310089E2FC /* CustomView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -545,7 +565,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		80CA3BFDE75327E7F3A363B1 /* [CP] Copy Pods Resources */ = {
@@ -606,8 +626,10 @@
 				1F2DDAD3202DC6D600B7B341 /* NewCashier.swift in Sources */,
 				1FBD56E62016226D00DF4446 /* SignupViewController.swift in Sources */,
 				1F381F0020317B6D005C98F9 /* HTTPStatusCode.swift in Sources */,
+				1F5C7EBF207C85310089E2FC /* CustomView.swift in Sources */,
 				1FEBB64120286C5900CD1FFD /* CardsViewController.swift in Sources */,
 				1F05C6602008DCFA00D6443C /* RoundedButton.swift in Sources */,
+				1F5C7FB5207CDDA90089E2FC /* DiscountsCollectionViewCell.swift in Sources */,
 				1F2DDACE202DB22300B7B341 /* Companies.swift in Sources */,
 				1F2B52CF1FD54F42000492AE /* AppDelegate.swift in Sources */,
 				33E5CE492037673200650C7C /* UITextFiled+PhoneNumberDelegate.swift in Sources */,
@@ -619,11 +641,13 @@
 				1FEBB66220288CBB00CD1FFD /* CompanyDiscountsViewController.swift in Sources */,
 				1FEBB65B20288B6200CD1FFD /* CompanySegmentedViewController.swift in Sources */,
 				1FEBB651202875BB00CD1FFD /* SettingsViewController.swift in Sources */,
+				1F5C7FB3207CDD360089E2FC /* HomeCollectionViewCell.swift in Sources */,
 				1FEB2F9E20076D930031052A /* Extensions + UIView.swift in Sources */,
 				1F09BB0A2016FC46008E9536 /* GlobalFunctions.swift in Sources */,
 				1FEBB65520287E2E00CD1FFD /* ProfileViewController.swift in Sources */,
 				1FEBB66020288CAB00CD1FFD /* CompanyContactsViewController.swift in Sources */,
 				1FEBB62D202869AC00CD1FFD /* MainViewController.swift in Sources */,
+				1F5C7EC1207C8B2F0089E2FC /* CategoriesTableViewCell.swift in Sources */,
 				1F381F022031A7CF005C98F9 /* ApiAddress.swift in Sources */,
 				1F2DDAD5202DC7BC00B7B341 /* Users.swift in Sources */,
 				1FEBB6572028819B00CD1FFD /* CategoriesViewController.swift in Sources */,

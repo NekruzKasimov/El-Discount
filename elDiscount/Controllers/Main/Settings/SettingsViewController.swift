@@ -17,7 +17,7 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = "Настройки"
-        
+        view.setGradientToBackground()
     }
 }
 

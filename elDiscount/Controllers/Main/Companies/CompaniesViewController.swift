@@ -9,8 +9,6 @@
 import UIKit
 
 class CompaniesViewController: UIViewController {
-
-    @IBOutlet weak var mainView: UIView!
     
     private let cellId = "CompaniesCollectionViewCell"
     
@@ -18,7 +16,6 @@ class CompaniesViewController: UIViewController {
         super.viewDidLoad()
         
         view.setGradientToBackground()
-        mainView.customizeMainView()
         
     }
 }
@@ -41,7 +38,7 @@ extension CompaniesViewController: UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = UIScreen.main.bounds.width
+        let width = collectionView.frame.width
 
         return CGSize(width: width, height: 130)
     }

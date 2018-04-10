@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,23 +18,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SY7-C1-gw7">
-                                <rect key="frame" x="8" y="30" width="359" height="657"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SY7-C1-gw7" customClass="MainCustomView" customModule="elDiscount" customModuleProvider="target">
+                                <rect key="frame" x="8" y="30" width="359" height="637"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Slf-4o-5PR">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="637"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KtA-We-12P">
+                                            <size key="itemSize" width="350" height="122"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DiscountsCollectionViewCell" id="42q-gG-06n" customClass="DiscountsCollectionViewCell" customModule="elDiscount" customModuleProvider="target">
+                                                <rect key="frame" x="4.5" y="0.0" width="350" height="122"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="122"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tuy-Sl-dtK" customClass="CustomView" customModule="elDiscount" customModuleProvider="target">
+                                                            <rect key="frame" x="24" y="16" width="302" height="102"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                    </subviews>
+                                                </view>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="tuy-Sl-dtK" secondAttribute="trailing" constant="24" id="UIc-6B-NKB"/>
+                                                    <constraint firstItem="tuy-Sl-dtK" firstAttribute="leading" secondItem="42q-gG-06n" secondAttribute="leading" constant="24" id="f9v-SG-NwH"/>
+                                                    <constraint firstItem="tuy-Sl-dtK" firstAttribute="top" secondItem="42q-gG-06n" secondAttribute="top" constant="16" id="zEA-Kv-HYL"/>
+                                                    <constraint firstAttribute="bottom" secondItem="tuy-Sl-dtK" secondAttribute="bottom" constant="4" id="zSg-iL-sdH"/>
+                                                </constraints>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="gw7-s0-N6T" id="DZU-d4-In0"/>
+                                            <outlet property="delegate" destination="gw7-s0-N6T" id="r0r-7Z-chq"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Slf-4o-5PR" secondAttribute="trailing" id="2b0-6p-Csx"/>
+                                    <constraint firstItem="Slf-4o-5PR" firstAttribute="leading" secondItem="SY7-C1-gw7" secondAttribute="leading" id="LBw-0a-jrI"/>
+                                    <constraint firstAttribute="bottom" secondItem="Slf-4o-5PR" secondAttribute="bottom" id="Owp-TP-s4J"/>
+                                    <constraint firstItem="Slf-4o-5PR" firstAttribute="top" secondItem="SY7-C1-gw7" secondAttribute="top" id="V4g-53-gwh"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SY7-C1-gw7" firstAttribute="top" secondItem="Qyz-e9-5dH" secondAttribute="top" constant="10" id="7Ku-02-I05"/>
                             <constraint firstItem="SY7-C1-gw7" firstAttribute="leading" secondItem="Qyz-e9-5dH" secondAttribute="leading" constant="8" id="9Nd-lq-81N"/>
-                            <constraint firstAttribute="bottom" secondItem="SY7-C1-gw7" secondAttribute="bottom" constant="-20" id="LIR-fQ-crK"/>
+                            <constraint firstAttribute="bottom" secondItem="SY7-C1-gw7" secondAttribute="bottom" id="LIR-fQ-crK"/>
                             <constraint firstItem="Qyz-e9-5dH" firstAttribute="trailing" secondItem="SY7-C1-gw7" secondAttribute="trailing" constant="8" id="S4r-jg-tc3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qyz-e9-5dH"/>
                     </view>
-                    <connections>
-                        <outlet property="mainView" destination="SY7-C1-gw7" id="2XR-cN-Uc1"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k95-kC-w9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

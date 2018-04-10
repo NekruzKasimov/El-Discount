@@ -40,7 +40,7 @@ class CompanySegmentedViewController: SJSegmentedViewController {
         segmentedController.segmentTitleFont = UIFont.boldSystemFont(ofSize: 16)
         segmentedController.selectedSegmentViewColor = AppStyle.Color.green
         segmentedController.segmentBounces = true
-        segmentedController.segmentShadow = SJShadow.white()
+        segmentedController.segmentShadow = SJShadow.light()
         segmentedController.showsHorizontalScrollIndicator = false
         segmentedController.showsVerticalScrollIndicator = false
                 

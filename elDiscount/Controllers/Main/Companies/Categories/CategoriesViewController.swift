@@ -9,18 +9,15 @@
 import UIKit
 
 class CategoriesViewController: UIViewController {
-
-    @IBOutlet weak var mainView: UIView!
     
     private let categories = ["Еда" , "Досуг" , "Услуги" , "Одежда" , "Супермаркеты"]
-    private let cellId = "categoryCell"
+    private let cellId = "CategoriesTableViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.title = "Компании"
         view.setGradientToBackground()
-        mainView.customizeMainView()
     }
 }
 
@@ -31,8 +28,8 @@ extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-        cell.textLabel?.text = categories[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! CategoriesTableViewCell
+        cell.categoryLabel.text = categories[indexPath.row]
         return cell
     }
     
@@ -44,6 +41,6 @@ extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 100
     }
 }

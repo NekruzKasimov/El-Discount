@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,9 +18,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cY4-YJ-ZRs">
-                                <rect key="frame" x="8" y="30" width="359" height="657"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cY4-YJ-ZRs" customClass="MainCustomView" customModule="elDiscount" customModuleProvider="target">
+                                <rect key="frame" x="8" y="30" width="359" height="637"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VMh-or-P3O">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="637"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eXM-VB-qy8">
+                                            <size key="itemSize" width="299" height="123"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionViewCell" id="4La-qk-jEp" customClass="HomeCollectionViewCell" customModule="elDiscount" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="0.0" width="299" height="123"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="299" height="123"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Yg-oe-8gi" customClass="CustomView" customModule="elDiscount" customModuleProvider="target">
+                                                            <rect key="frame" x="24" y="16" width="251" height="103"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                    </subviews>
+                                                </view>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="1Yg-oe-8gi" firstAttribute="leading" secondItem="4La-qk-jEp" secondAttribute="leading" constant="24" id="0VU-MZ-laB"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1Yg-oe-8gi" secondAttribute="bottom" constant="4" id="Fbh-tz-9gm"/>
+                                                    <constraint firstItem="1Yg-oe-8gi" firstAttribute="top" secondItem="4La-qk-jEp" secondAttribute="top" constant="16" id="HFA-IP-fBX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1Yg-oe-8gi" secondAttribute="trailing" constant="24" id="dxi-z0-NbZ"/>
+                                                </constraints>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="b8Q-3Z-Ure" id="04F-qe-OPQ"/>
+                                            <outlet property="delegate" destination="b8Q-3Z-Ure" id="Rv7-uL-ir6"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="VMh-or-P3O" firstAttribute="top" secondItem="cY4-YJ-ZRs" secondAttribute="top" id="9lI-ib-3Hg"/>
+                                    <constraint firstItem="VMh-or-P3O" firstAttribute="leading" secondItem="cY4-YJ-ZRs" secondAttribute="leading" id="aMU-Cb-cZg"/>
+                                    <constraint firstAttribute="trailing" secondItem="VMh-or-P3O" secondAttribute="trailing" id="kwu-YW-Ie6"/>
+                                    <constraint firstAttribute="bottom" secondItem="VMh-or-P3O" secondAttribute="bottom" id="nsl-tX-lQ7"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -28,13 +73,10 @@
                             <constraint firstItem="UD1-nQ-kGS" firstAttribute="trailing" secondItem="cY4-YJ-ZRs" secondAttribute="trailing" constant="8" id="AdH-Ca-cBM"/>
                             <constraint firstItem="cY4-YJ-ZRs" firstAttribute="top" secondItem="UD1-nQ-kGS" secondAttribute="top" constant="10" id="WSy-vi-8tc"/>
                             <constraint firstItem="cY4-YJ-ZRs" firstAttribute="leading" secondItem="UD1-nQ-kGS" secondAttribute="leading" constant="8" id="xQV-Kw-bTL"/>
-                            <constraint firstAttribute="bottom" secondItem="cY4-YJ-ZRs" secondAttribute="bottom" constant="-20" id="xVG-zB-0x6"/>
+                            <constraint firstAttribute="bottom" secondItem="cY4-YJ-ZRs" secondAttribute="bottom" id="xVG-zB-0x6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UD1-nQ-kGS"/>
                     </view>
-                    <connections>
-                        <outlet property="mainView" destination="cY4-YJ-ZRs" id="nW3-5C-enA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f4i-CG-Q8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
